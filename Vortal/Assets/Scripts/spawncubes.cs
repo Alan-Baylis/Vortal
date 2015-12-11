@@ -16,7 +16,7 @@ public class spawncubes : MonoBehaviour {
 
         if(Input.GetMouseButtonDown(0))
         { 
-            GameObject newObject = (GameObject)GameObject.Instantiate(Resources.Load("newCube"), userRef.transform.GetChild(0).position + 2 * userRef.transform.GetChild(0).forward, Quaternion.identity);
+            GameObject newObject = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/newCube"), userRef.transform.GetChild(0).position + 2 * userRef.transform.GetChild(0).forward, Quaternion.identity);
             newObject.name = "Cube";
          }
 	}
