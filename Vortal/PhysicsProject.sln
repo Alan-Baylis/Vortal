@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicsProject.CSharp.Plugins", "PhysicsProject.CSharp.Plugins.csproj", "{9F48A063-E8E2-04CD-35E7-61217178363E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicsProject.CSharp", "PhysicsProject.CSharp.csproj", "{DBE11E3C-755F-DE03-0928-1055ECB6FDD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicsProject.CSharp.Editor", "PhysicsProject.CSharp.Editor.csproj", "{A3C3638C-6E3A-18DC-E2AA-853F38E8DA54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F48A063-E8E2-04CD-35E7-61217178363E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F48A063-E8E2-04CD-35E7-61217178363E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F48A063-E8E2-04CD-35E7-61217178363E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F48A063-E8E2-04CD-35E7-61217178363E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE11E3C-755F-DE03-0928-1055ECB6FDD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE11E3C-755F-DE03-0928-1055ECB6FDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE11E3C-755F-DE03-0928-1055ECB6FDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE11E3C-755F-DE03-0928-1055ECB6FDD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C3638C-6E3A-18DC-E2AA-853F38E8DA54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C3638C-6E3A-18DC-E2AA-853F38E8DA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C3638C-6E3A-18DC-E2AA-853F38E8DA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C3638C-6E3A-18DC-E2AA-853F38E8DA54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
