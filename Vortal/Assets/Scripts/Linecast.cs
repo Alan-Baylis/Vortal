@@ -23,7 +23,7 @@ public class Linecast : MonoBehaviour {
         if (Physics.Raycast(linestart, transform.forward, out hit, 5))
         {
             line.SetPosition(1, hit.point);
-            if(Input.GetKeyDown(KeyCode.E) && hit.transform.tag != "Floor" && !grabby)
+            if(Input.GetKeyDown(KeyCode.E) && (hit.transform.tag == "Grabbable") && !grabby)
             {
                 carriedObject = hit.transform.gameObject;
                 carriedObject.GetComponent<Rigidbody>().useGravity = false;
