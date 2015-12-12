@@ -8,6 +8,7 @@ public class Linecast : MonoBehaviour {
     public Vector3 linestart;
     public bool grabby;
     public GameObject carriedObject;
+    public float grabbedTime;
 
 	// Use this for initialization
 	void Start ()
@@ -28,6 +29,7 @@ public class Linecast : MonoBehaviour {
                 carriedObject.GetComponent<Rigidbody>().useGravity = false;
                 carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 grabby = true;
+                grabbedTime = Time.time;
                 carriedObject.transform.SetParent(transform);
                 carriedObject.transform.localPosition = new Vector3(0,0,2);
             }
@@ -36,7 +38,7 @@ public class Linecast : MonoBehaviour {
         {
             line.SetPosition(1, linestart);
         }
-        if(grabby && Input.GetKeyUp(KeyCode.E))
+        if(grabby && Input.GetKeyDown(KeyCode.E) && (Time.time - grabbedTime > 0.1))
         {
             carriedObject.GetComponent<Rigidbody>().useGravity = true;
             grabby = false;
