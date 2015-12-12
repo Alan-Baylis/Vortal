@@ -15,6 +15,13 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        // Check if player fell off.
+        if(gameObject.transform.position.y <= -100)
+        {
+            gameObject.transform.position = new Vector3(0,2,-5);
+        }
+
         // Player collected x_amount of coins.. yay
         if(coinAmount == 10 && completeCoins == false)
         {
