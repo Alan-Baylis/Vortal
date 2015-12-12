@@ -7,10 +7,11 @@ public class Coin : MonoBehaviour {
     public ParticleSystem particles;
     public bool isHit;
     public float hitTime;
-
+    public GameObject Player;
+    
 	// Use this for initialization
 	void Start () {
-	
+        Player = GameObject.Find("FPSController");
 	}
 	
 	// Update is called once per frame
@@ -39,6 +40,9 @@ public class Coin : MonoBehaviour {
             audio.Play();
             particles.Emit(100);
             isHit = true;
+            if(gameObject.tag == "Coin") {
+                Player.GetComponent<Player>().coinAmount += 1;
+            }   
         }
         
     }
